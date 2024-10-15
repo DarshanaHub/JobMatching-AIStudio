@@ -1,0 +1,6 @@
+We have two datasets for work experience, and one from job postings:
+The first dataset is raw data from Kaggle, which includes what people reported on their profiles about their work experience.
+The second dataset is the one we treated and verified, correcting discrepancies in the work experience information.
+The job postings dataset comes from two sources, LinkedIn and GetonBoard, some of the second source postings are in Spanish.
+Our goal is to match these jobs with the most suitable profiles using both the original and verified work experience datasets. We’re testing how to achieve better matches for the jobs using the same models and tools. The task is to assign the best-fit profiles for each job.
+We tried to replicate how the scenario is in real life.

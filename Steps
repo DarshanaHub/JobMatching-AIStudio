@@ -1,0 +1,21 @@
+Proposed approach
+Data Preprocessing:
+Translation Tool: Use a translation API like Google Cloud Translation or DeepL API for the Spanish job descriptions. (If we consider doing that)
+Setup: Sign up for the API service and obtain an API key.
+Data Input: Send the Spanish job descriptions to the API and receive the translated text.
+Labeling: we will go through this together to make them equivalent.
+Text Embedding:
+Embedding Model: Use a pre-trained BERT model or Sentence Transformers from the Hugging Face Transformers library.
+Setup: Install the Transformers library (pip install transformers) and download a pre-trained BERT or Sentence Transformers model.
+Data Input: Process each job description and candidate experience through the model to obtain embeddings.
+Matching Algorithm:
+Similarity Measure: Compute cosine similarity between embeddings using a library like SciPy (you can research for other options too! Feel free to do so).
+Setup: Install SciPy (pip install scipy).
+Data Input: Use the embeddings from the previous step to calculate cosine similarity.
+Threshold: Set a threshold for similarity scores to determine matches.
+Supervised Learning:
+Machine Learning Model: If you have labeled data, use models like Random Forest or Logistic Regression for further accuracy improvements in matching.
+If we decide to translate, we can use Google’s APIs. Although we’re waiting for AWS credits, using Google might be faster and a good opportunity to test Google’s tools. Plus, the Google ambassador speaking next week will cover tools for these types of use cases, which could be useful.
+The final outcomes should be:
+Job matches using the original dataset from Kaggle.
+Job matches using the treated, verified dataset.
